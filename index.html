@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS CV Maker - Professional AI Resume Builder & PDF Tools</title>
+    <meta name="description" content="Create job-winning ATS-friendly resumes in minutes with 100+ templates, AI suggestions, ATS score analyzer, and built-in PDF tools.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.15), transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.15), transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-purple-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-sky-500/20">
+                    CV
+                </div>
+                <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                    ATS CV Maker
+                </span>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#features" class="hover:text-sky-400 transition-colors">Features</a>
+                <a href="#calculator" class="hover:text-sky-400 transition-colors">ATS Checker</a>
+                <a href="#templates" class="hover:text-sky-400 transition-colors">Templates</a>
+                <a href="#faq" class="hover:text-sky-400 transition-colors">FAQ</a>
+            </nav>
+
+            <a href="#download" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-sm transition-all shadow-lg shadow-sky-500/25 active:scale-95">
+                <i class="fab fa-google-play"></i>
+                <span>Get App Free</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow hero-gradient">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 text-center md:text-left grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-bold uppercase tracking-wider">
+                    <i class="fas fa-sparkles"></i> Powered by Smart AI
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
+                    Get More Interviews with an <span class="bg-gradient-to-r from-sky-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">ATS-Optimized</span> Resume.
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-xl font-normal leading-relaxed">
+                    Build professional, recruiter-approved CVs in under 5 minutes. Pass automated Applicant Tracking Systems with 100+ free templates, built-in AI content suggestions, and PDF tools.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
+                    <a href="#download" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-sky-500 to-purple-600 hover:from-sky-400 hover:to-purple-500 text-white font-bold text-base transition-all shadow-xl shadow-sky-500/25 hover:scale-[1.02] active:scale-95">
+                        <i class="fab fa-google-play text-xl"></i>
+                        <span>Download on Google Play</span>
+                    </a>
+
+                    <a href="#calculator" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl glass-card hover:bg-slate-800 text-slate-200 font-semibold text-base transition-all">
+                        <i class="fas fa-calculator text-sky-400"></i>
+                        <span>Test ATS Score</span>
+                    </a>
+                </div>
+
+                <div class="pt-6 flex items-center gap-6 text-slate-400 text-xs font-medium justify-center md:justify-start">
+                    <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-emerald-400"></i> 100% Free Templates</span>
+                    <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-emerald-400"></i> 60+ Languages</span>
+                    <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-emerald-400"></i> No Credit Card Required</span>
+                </div>
+            </div>
+
+            <!-- App Mockup Card -->
+            <div class="relative">
+                <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-sky-500 to-purple-600 opacity-30 blur-2xl"></div>
+                <div class="relative glass-card rounded-3xl p-6 sm:p-8 space-y-6 border border-slate-700/50">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-xs font-semibold text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-full">Live App Preview</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+                                    95%
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">ATS Health Score</h4>
+                                    <p class="text-xs text-slate-400">Excellent! Ready for top employers.</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-shield-check text-emerald-400 text-xl"></i>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                                <i class="fas fa-file-pdf text-purple-400 text-2xl mb-1"></i>
+                                <div class="text-xs font-bold text-slate-200">100+ Templates</div>
+                                <div class="text-[10px] text-slate-500">ATS Compliant Layouts</div>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                                <i class="fas fa-file-archive text-sky-400 text-2xl mb-1"></i>
+                                <div class="text-xs font-bold text-slate-200">PDF Tools</div>
+                                <div class="text-[10px] text-slate-500">Merge, Compress & Split</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-gradient-to-r from-purple-900/30 to-sky-900/30 border border-purple-500/20 text-xs text-slate-300">
+                            <i class="fas fa-wand-magic-sparkles text-purple-400 mr-1.5"></i>
+                            <strong>AI Suggestion:</strong> "Results-driven professional with 5+ years of experience in project delivery and team leadership."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive ATS Calculator Tool Widget -->
+        <section id="calculator" class="max-w-4xl mx-auto px-4 py-16">
+            <div class="glass-card rounded-3xl p-8 border border-sky-500/30 shadow-2xl relative overflow-hidden">
+                <div class="text-center space-y-3 mb-8">
+                    <span class="text-sky-400 text-xs font-bold uppercase tracking-wider">Free Interactive Widget</span>
+                    <h2 class="text-3xl font-extrabold text-white">Interactive ATS Score Meter</h2>
+                    <p class="text-sm text-slate-400">Select your job title to simulate your ATS resume compatibility score</p>
+                </div>
+
+                <div class="space-y-6 max-w-xl mx-auto">
+                    <div>
+                        <label for="jobTitleSelect" class="block text-xs font-bold text-slate-300 mb-2">Target Job Title</label>
+                        <select id="jobTitleSelect" onchange="calculateScore()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-500">
+                            <option value="software">Software Developer / Engineer</option>
+                            <option value="nurse">Registered Nurse / Medical Professional</option>
+                            <option value="manager">Project Manager / Operations</option>
+                            <option value="accountant">Accountant / Financial Analyst</option>
+                            <option value="teacher">Teacher / Academic Educator</option>
+                            <option value="sales">Sales &amp; Marketing Representative</option>
+                        </select>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs font-bold">
+                            <span class="text-slate-400">Calculated ATS Readiness</span>
+                            <span id="scorePercentage" class="text-sky-400 font-mono text-base">92%</span>
+                        </div>
+                        <div class="w-full h-4 bg-slate-900 rounded-full overflow-hidden p-0.5 border border-slate-800">
+                            <div id="scoreBar" class="h-full bg-gradient-to-r from-sky-500 to-emerald-400 rounded-full transition-all duration-700" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <div id="scoreTip" class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-300 flex items-start gap-3">
+                        <i class="fas fa-lightbulb text-amber-400 text-base mt-0.5"></i>
+                        <div>
+                            <strong class="text-white block mb-1">ATS Optimization Tip:</strong>
+                            <span id="tipText">Use standard section headings like "Work Experience" and "Education" so ATS scanners parse your experience correctly.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">Everything You Need To Get Hired</h2>
+                <p class="text-slate-400 text-base mt-3">Built with modern career tools to help your CV stand out to both AI scanners and hiring managers.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-6 rounded-2xl hover:border-sky-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">100+ ATS Templates</h3>
+                    <p class="text-sm text-slate-400">Clean, professional layouts engineered to pass Applicant Tracking Systems without parsing errors.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-purple-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">AI Smart Suggestions</h3>
+                    <p class="text-sm text-slate-400">Instantly generate tailored professional summaries, bullet points, and skills with 1-tap AI assistance.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Built-in PDF Tools</h3>
+                    <p class="text-sm text-slate-400">Merge supporting certificates with your CV, compress PDF size, or extract pages directly in the app.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates Showcase Section -->
+        <section id="templates" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-purple-400 text-xs font-bold uppercase tracking-wider">Designed For Employers</span>
+                <h2 class="text-3xl font-black text-white mt-2">100+ Professional ATS Layouts</h2>
+                <p class="text-slate-400 text-sm mt-2">Whether you are an Executive, Engineer, Nurse, or Recent Graduate, choose from clean, high-impact styles.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 text-center hover:border-sky-500/50 transition-all">
+                    <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 mb-3 flex flex-col justify-center p-3 text-left">
+                        <div class="w-12 h-2 bg-sky-500 rounded mb-2"></div>
+                        <div class="w-full h-1.5 bg-slate-700 rounded mb-1"></div>
+                        <div class="w-3/4 h-1.5 bg-slate-700 rounded mb-3"></div>
+                        <div class="w-full h-1 bg-slate-800 rounded mb-1"></div>
+                        <div class="w-5/6 h-1 bg-slate-800 rounded"></div>
+                    </div>
+                    <span class="text-xs font-bold text-white">Classic Professional</span>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 text-center hover:border-purple-500/50 transition-all">
+                    <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 mb-3 flex flex-col justify-center p-3 text-left">
+                        <div class="w-12 h-2 bg-purple-500 rounded mb-2"></div>
+                        <div class="w-full h-1.5 bg-slate-700 rounded mb-1"></div>
+                        <div class="w-3/4 h-1.5 bg-slate-700 rounded mb-3"></div>
+                        <div class="w-full h-1 bg-slate-800 rounded mb-1"></div>
+                        <div class="w-5/6 h-1 bg-slate-800 rounded"></div>
+                    </div>
+                    <span class="text-xs font-bold text-white">Executive Modern</span>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                    <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 mb-3 flex flex-col justify-center p-3 text-left">
+                        <div class="w-12 h-2 bg-emerald-500 rounded mb-2"></div>
+                        <div class="w-full h-1.5 bg-slate-700 rounded mb-1"></div>
+                        <div class="w-3/4 h-1.5 bg-slate-700 rounded mb-3"></div>
+                        <div class="w-full h-1 bg-slate-800 rounded mb-1"></div>
+                        <div class="w-5/6 h-1 bg-slate-800 rounded"></div>
+                    </div>
+                    <span class="text-xs font-bold text-white">Minimalist Tech</span>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl border border-slate-800 text-center hover:border-amber-500/50 transition-all">
+                    <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 mb-3 flex flex-col justify-center p-3 text-left">
+                        <div class="w-12 h-2 bg-amber-500 rounded mb-2"></div>
+                        <div class="w-full h-1.5 bg-slate-700 rounded mb-1"></div>
+                        <div class="w-3/4 h-1.5 bg-slate-700 rounded mb-3"></div>
+                        <div class="w-full h-1 bg-slate-800 rounded mb-1"></div>
+                        <div class="w-5/6 h-1 bg-slate-800 rounded"></div>
+                    </div>
+                    <span class="text-xs font-bold text-white">Academic &amp; Research</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800/80">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-white">Frequently Asked Questions</h2>
+                <p class="text-slate-400 text-sm mt-2">Everything you need to know about ATS CV Maker.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-sky-400"></i> What is an ATS CV?</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">An ATS (Applicant Tracking System) CV uses clean formatting, standard section headers, and parseable typography so automated recruitment software can read your qualifications without errors.</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-sky-400"></i> Are the PDF Tools included in the app?</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Yes! You can merge supporting certificates or ID documents with your CV, compress PDF files, or extract specific pages directly within ATS CV Maker.</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-sky-400"></i> Is my personal data stored securely?</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">100%! All your CV profiles and details are stored locally on your device with hardware encryption. We do not upload your personal resume details to external databases.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Banner -->
+        <section id="download" class="max-w-5xl mx-auto px-4 py-20 text-center">
+            <div class="glass-card rounded-3xl p-10 sm:p-14 border border-sky-500/40 relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
+                <h2 class="text-3xl sm:text-5xl font-black text-white mb-4">Ready To Land Your Dream Job?</h2>
+                <p class="text-slate-300 max-w-xl mx-auto mb-8 text-base">Download ATS CV Maker for free on Android and generate a professional CV in under 5 minutes.</p>
+
+                <a href="https://play.google.com/store/apps/details?id=com.atscvmaker.com" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-sky-500 to-purple-600 hover:from-sky-400 hover:to-purple-500 text-white font-bold text-lg shadow-xl shadow-sky-500/30 hover:scale-105 transition-all">
+                    <i class="fab fa-google-play text-2xl"></i>
+                    <span>Get ATS CV Maker on Google Play</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 text-slate-400 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-sky-500 text-white flex items-center justify-center font-black">CV</div>
+                <span class="font-bold text-white">ATS CV Maker</span>
+            </div>
+
+            <div class="flex gap-6 text-xs text-slate-400">
+                <a href="https://atscvapp.github.io/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#features" class="hover:text-white transition-colors">Features</a>
+                <a href="#calculator" class="hover:text-white transition-colors">ATS Checker</a>
+            </div>
+
+            <p class="text-xs text-slate-500">© 2026 ATS CV Maker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const tips = {
+            software: { score: 95, tip: "Highlight frameworks (Kotlin, React, Node.js) and quantify achievements (e.g. 'Improved performance by 30%')." },
+            nurse: { score: 92, tip: "Include certifications (BLS, ACLS, RN License) and patient care volume in critical units." },
+            manager: { score: 88, tip: "Emphasize budget management, project delivery timelines, and cross-functional team leadership." },
+            accountant: { score: 94, tip: "Mention CPA/ACCA credentials, financial reporting compliance, and auditing tools." },
+            teacher: { score: 90, tip: "Detail curriculum development, student achievement metrics, and classroom management techniques." },
+            sales: { score: 91, tip: "Showcase quota achievements (e.g., 'Exceeded quarterly sales targets by 25%') and deal sizes." }
+        };
+
+        function calculateScore() {
+            const val = document.getElementById('jobTitleSelect').value;
+            const data = tips[val] || tips.software;
+
+            document.getElementById('scorePercentage').innerText = data.score + "%";
+            document.getElementById('scoreBar').style.width = data.score + "%";
+            document.getElementById('tipText').innerText = data.tip;
+        }
+    </script>
+</body>
+</html>
